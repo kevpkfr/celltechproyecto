@@ -1,0 +1,40 @@
+<div class="col-md-3 sidebar">
+  <h2>Dashboard</h2>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="/dashboard">
+        <i class="fa fa-home"></i>Inicio
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/dashboard/products">
+        <i class="fa fa-cube"></i>Productos
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/dashboard/order">
+        <i class="fa fa-shopping-cart"></i>Ordenes
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/dashboard/comentarios">
+        <i class="fa fa-comments"></i>Coment
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/dashboard/contactanos">
+        <i class="fa fa-envelope"></i>Mensajes
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">
+        <i class="fa fa-cogs"></i>Configuración
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/" *ngIf="isLogged" (click)="logOut()">
+        <i class="fa fa-sign-out"></i>Salir
+      </a>
+    </li>
+  </ul>
+</div>
