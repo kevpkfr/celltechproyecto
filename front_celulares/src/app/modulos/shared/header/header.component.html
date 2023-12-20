@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <!-- Logo a la izquierda -->
-    <a class="navbar-brand" routerLink="/">
+    <a class="navbar-brand text-white" routerLink="/">
       <div class="logo tittles-pages">
         PhoneStore
       </div>
@@ -14,14 +14,14 @@
     <!-- Navigation items a la derecha -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" routerLink="/pages/login" *ngIf="!isLogged"><i class="fa fa-user"></i> Ingresar</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/" *ngIf="isLogged" (click)="logOut()"><i class="fa fa-sign-out"></i> Salir</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/pages/products">Productos</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/pages/noticias">Noticias</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/pages/servicios">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/pages/contactenos">Contactenos</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/pages/order">Pedidos</a></li>
-        <button routerLink="/pages/carrito/" class="cart-btn bg-dark ">
+        <li class="nav-item"><a class="nav-link text-white" routerLink="/pages/login" *ngIf="!isLogged"><i class="fa fa-user"></i> Ingresar</a></li>
+        <li class="nav-item"><a class="nav-link text-white" routerLink="/" *ngIf="isLogged" (click)="logOut()"><i class="fa fa-sign-out"></i> Salir</a></li>
+        <li class="nav-item"><a class="nav-link text-white" routerLink="/pages/products">Productos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" routerLink="/pages/noticias">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link text-white" routerLink="/pages/servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link text-white" routerLink="/pages/contactenos">Contactenos</a></li>
+        <li class="nav-item"><a class="nav-link text-white" routerLink="/pages/order">Pedidos</a></li>
+        <button routerLink="/pages/carrito/" class="cart-btn bg-primary ">
           <i class="fa fa-shopping-cart fa-inverse" aria-hidden="true"></i>
           <span class="cart-item-count ml-1" style="color: white;">{{ cartService.getCartItems().length }}</span>
         </button>
@@ -29,5 +29,4 @@
     </div>
   </div>
 </nav>
-
 
